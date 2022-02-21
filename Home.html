@@ -5,37 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/nav.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
     <title>Home || Augustinusschool</title>
 </head>
+
 <body>
    <header>
-       <img src="./img/Logo.png" alt="">
-       <nav>
-           <ul>
-               <li>Nieuws</li>
-               <li>Kalender</li>
-               <li>De Groepen</li>
-               <li>Foto's</li>
-               <li>Praktische zaken</li>
-               <li>Ouders</li>
-               <li>De zorg</li>
-               <li>Lekker Fit</li>
-           </ul>
-       </nav>
+        <div id="nav-placeholder"></div>
    </header>
     <main>
-
-      <!-- Slideshow -->
-      <section class="S1">
-        <img class="mySlides fade" src="./img/Slide1.jpg" />
-        <img class="mySlides fade" src="./img/Slide2.jpg" />
-        <img class="mySlides fade" src="./img/Slide3.jpg" />
-        <img class="mySlides fade" src="./img/Slide4.jpg" />
-        <img class="mySlides fade" src="./img/Slide5.jpg" />
-        <img class="mySlides fade" src="./img/Slide6.jpg" />
-        <img class="mySlides fade" src="./img/Slide7.jpg" />
-      </section>
-        
         <section>
             <p>
                 De Augustinusschool voor actief en uitdagend leren
@@ -57,35 +37,25 @@
             010-4364378 <br>
             augustinus.dir@rvko.nl <br>
         </section>
-        
     </main>
+
     <footer>
-        <ul>
-            <li>Ons Team</li>
-            <li>Onze School</li>
-            <li>Thuiswerken</li>
-            <li>Gezonde recepten</li>
-        </ul>
+        <div id="footer-placeholder"></div>
     </footer>
 
-    <!-- Slideshow -->
+     <!----- NAVBAR ----->
+     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     <script>
+       $(function () {
+         $("#nav-placeholder").load("./Nav.html");
+       });
+     </script>
+
+      <!----- FOOTER ----->
     <script>
-        var slideIndex = 0;
-        showSlides();
-  
-        function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {
-            slideIndex = 1;
-          }
-          slides[slideIndex - 1].style.display = "block";
-          setTimeout(showSlides, 7000); // Change image every 5 seconds
-        }
+        $(function () {
+          $("#footer-placeholder").load("./Footer.html");
+        });
       </script>
 </body>
 </html>

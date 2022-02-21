@@ -1,59 +1,77 @@
-/*----------------- MAIN -----------------*/
-main section{
-    width: calc(100vw- 8em);
-    min-width: 400px;
-    margin: 2em auto;
-    margin: 2em;
-}
-main .S3{
-   display: grid;
-   grid-template-columns: repeat(2, calc(50% - .25em)) ;
-   grid-template-rows: 25em;
-   gap: .5em;
-}
-main .S3 iframe{
-    width: calc(100%);
-    height: 100%;
-}
-main .S4{
-    font-style: italic;
-}
-
 /*----------------- MEDIA QUERIES -----------------*/
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
     body {
+        background-color: red;
         width: 480px;
         font-size: .9em;
+    }
+    header ul{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
     }
     main .S3{
         grid-template-columns: repeat(1, calc(100%)) ;
         grid-template-rows: repeat(2, 15em );
      }
-} 
+     main .S1 img{
+        height: 8em;
+    }
+}
+  
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
     body {
+        background-color: yellow;
         font-size: .9em;
+    }
+    header ul{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
     }
     main .S3{
         grid-template-columns: repeat(1, calc(100%)) ;
         grid-template-rows: repeat(2, 19em);
      }
+     main .S1 img{
+        height: 10em;
+    }
 }
+  
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+    header ul{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
     main .S3{
         grid-template-columns: repeat(1, calc(100%)) ;
         grid-template-rows: repeat(2, 25em);
      }
+     main .S1 img{
+        height: 14em;
+    }
 }
+  
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-color: green;
+    }
     main .S3{
         grid-template-rows: repeat(2, 18em);
      }
      main .S1 img{
         height: 17em;
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    body {
+        background-color: white;
     }
 }

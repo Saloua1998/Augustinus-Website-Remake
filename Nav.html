@@ -1,0 +1,43 @@
+<a href=""><img src="./img/Logo.png" alt=""></a>
+<nav>
+    <ul>
+        <a href="./Nieuws.html"><li>Nieuws</li></a>
+        <a href=""><li>Kalender</li></a>
+        <a href=""><li>De Groepen</li></a>
+        <a href=""><li>Foto's</li></a>
+        <a href=""><li>Praktische zaken</li></a>
+        <a href=""><li>Ouders</li></a>
+        <a href=""><li>De zorg</li></a>
+        <a href=""><li>Lekker Fit</li></a>
+    </ul>
+</nav>
+<!-- Slideshow -->
+<section class="Slideshow">
+    <img class="mySlides fade" src="./img/Slide1.jpg" />
+    <img class="mySlides fade" src="./img/Slide2.jpg" />
+    <img class="mySlides fade" src="./img/Slide3.jpg" />
+    <img class="mySlides fade" src="./img/Slide4.jpg" />
+    <img class="mySlides fade" src="./img/Slide5.jpg" />
+    <img class="mySlides fade" src="./img/Slide6.jpg" />
+    <img class="mySlides fade" src="./img/Slide7.jpg" />
+  </section>
+
+  <!----- SLIDESHOW ----->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 7000); // Change image every 5 seconds
+    }
+  </script>
