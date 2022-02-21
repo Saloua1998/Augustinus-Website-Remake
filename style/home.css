@@ -31,14 +31,20 @@ header li:hover{
     box-shadow: 0px 5px 5px rgb(200, 200, 255);
 }
 /*----------------- MAIN -----------------*/
-main{
-    margin: 2em auto;
-    width: calc(100% - 8em);
-    min-width: 480px;
-}
 main section{
+    width: calc(100vw- 8em);
+    min-width: 400px;
+    margin: 2em auto;
     margin: 2em;
     border: 1px black solid;
+}
+main .S1{
+    margin: 0;
+}
+main .S1 img{
+    width: 100vw;
+    height: 20em;
+   
 }
 main .S3{
    display: grid;
@@ -74,6 +80,7 @@ footer li:hover{
     body {
         background-color: red;
         width: 480px;
+        font-size: .9em;
     }
     header ul{
         display: grid;
@@ -83,6 +90,9 @@ footer li:hover{
         grid-template-columns: repeat(1, calc(100%)) ;
         grid-template-rows: repeat(2, 15em );
      }
+     main .S1 img{
+        height: 8em;
+    }
 }
   
 /* Media Query for low resolution  Tablets, Ipads */
@@ -98,6 +108,9 @@ footer li:hover{
         grid-template-columns: repeat(1, calc(100%)) ;
         grid-template-rows: repeat(2, 19em);
      }
+     main .S1 img{
+        height: 10em;
+    }
 }
   
 /* Media Query for Tablets Ipads portrait mode */
@@ -113,6 +126,9 @@ footer li:hover{
         grid-template-columns: repeat(1, calc(100%)) ;
         grid-template-rows: repeat(2, 25em);
      }
+     main .S1 img{
+        height: 14em;
+    }
 }
   
 /* Media Query for Laptops and Desktops */
@@ -123,6 +139,9 @@ footer li:hover{
     main .S3{
         grid-template-rows: repeat(2, 18em);
      }
+     main .S1 img{
+        height: 17em;
+    }
 }
   
 /* Media Query for Large screens */
