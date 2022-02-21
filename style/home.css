@@ -2,15 +2,14 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
+    display: inline-block;
+    /* width: 100%; */
 }
 
 /* HEADER */
-nav{
-    margin-bottom: 1em;
-}
 header img{
-    width: 25vw;
+    min-width: 25em;
+    width: 30%;
     display: block;
     margin: 0 auto;
 }
@@ -33,6 +32,28 @@ header li:hover{
     box-shadow: 0px 5px 5px rgb(200, 200, 255);
 }
 
+/* MAIN */
+main{
+    margin: 2em 4em;
+}
+main section{
+    margin: 2em;
+    border: 1px black solid;
+}
+main .S3{
+   display: grid;
+   grid-template-columns: repeat(2, calc(50vw - 8em)) ;
+    gap: 2em;
+}
+main .S3 iframe{
+    border: 1px black solid;
+    width: calc(50vw - 7em);
+    height: 25em;
+}
+main .S4{
+    font-style: italic;
+}
+
 
 /* FOOTER */
 footer ul{
@@ -49,24 +70,52 @@ footer li:hover{
    color: rgb(0, 90, 255);
 }
 
-/* Tablets */
-@media (max-width:760px){
-    header img{
-        width: 35vw;
+/* MEDIA QUERIES */
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        background-color: red;
+        width: 480px;
     }
     header ul{
-        font-size: .9em;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
     }
 }
-
-/* Phones */
-@media (max-width:320px){
-    header img{
-        width: 100vw;
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
     }
     header ul{
-        font-size: .7em;
         display: grid;
-        grid-template-columns: repeat(4, 25vw);
+        grid-template-columns: repeat(4, 25%);
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+    header ul{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-color: green;
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    body {
+        background-color: white;
     }
 }
