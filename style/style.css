@@ -4,7 +4,52 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-block;
 }
+main section{
+    display: block;
+    max-width:  calc(100vw- 8em);
+    width: fit-content;
+    min-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+}
 a{
     text-decoration: none;
     color: currentColor;
+}
+
+/*----------------- MEDIA QUERIES -----------------*/
+/* Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        background-color: red;
+        width: 480px;
+        font-size: .9em;
+    }
+}
+  
+/* Low resolution Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+        font-size: .9em;
+    }
+}
+  
+/* Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+}
+/* Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-color: green;
+    }
+}
+/* Large screens */
+@media (min-width: 1281px) {
+    body {
+        background-color: white;
+    }
 }

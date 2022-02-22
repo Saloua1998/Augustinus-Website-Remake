@@ -1,3 +1,7 @@
+header{
+    margin-bottom: 2em;
+}
+
 header img{
     min-width: 25em;
     width: 30%;
@@ -25,9 +29,10 @@ header li a:hover{
 }
 header .Slideshow{
     margin: 0;
+    border: 0;
 }
 header .Slideshow img{
-    width: 100%;
+    width: 98.9vw;
     height: 20em;
 }
 
