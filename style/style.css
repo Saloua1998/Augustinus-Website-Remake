@@ -21,7 +21,7 @@ a{
 /* Mobile Devices */
 @media (max-width: 480px) {
     body {
-        background-color: red;
+        /* background-color: red; */
         width: 480px;
         font-size: .9em;
     }
@@ -38,7 +38,7 @@ a{
 /* Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px){
     body {
-        background-color: blue;
+        background-color: rgb(42, 230, 255);
     }
 }
 /* Laptops and Desktops */
