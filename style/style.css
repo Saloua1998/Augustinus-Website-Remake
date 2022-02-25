@@ -21,7 +21,7 @@ a{
 /* Mobile Devices */
 @media (max-width: 480px) {
     body {
-        /* background-color: red; */
+        background-color: rgb(236, 124, 124);
         width: 480px;
         font-size: .9em;
     }
