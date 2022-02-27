@@ -1,0 +1,15 @@
+main section a{
+    text-decoration: underline;
+}
+main section{
+    border: .3em rgb(30, 30, 30) solid;
+    border-radius: .5em;
+    box-shadow: 5px 5px 5px rgb(100, 100, 100);
+   
+    margin: 0 auto;
+    box-sizing: border-box;
+    min-width: 30em;
+    width: 90vw;
+    max-width: 60em ;
+    margin-bottom: 2em;
+}

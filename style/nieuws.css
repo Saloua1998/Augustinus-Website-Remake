@@ -4,9 +4,6 @@ h1{
 h2{
     font-size: .8em;
 }
-body{
-    overflow-x: hidden;
-}
 main{
     justify-content: center;
     display: grid;
@@ -16,7 +13,7 @@ main{
     margin-right: 2em;
 }
 main section{
-    border: .3em rgb(50, 50, 50) solid;
+    border: .3em rgb(30, 30, 30) solid;
     box-shadow: 5px 5px 5px rgb(100, 100, 100);
     border-radius: 1em;
     margin: 0 0em;
