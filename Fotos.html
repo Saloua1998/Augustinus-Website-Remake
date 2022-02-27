@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/nav.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/fotos.css">
+    <title>Nieuws</title>
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 17px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 10px grey; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(0, 100, 255); 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(0, 100, 220); 
+      }
+      </style>
+</head>
+
+<body>
+   <header>
+        <div id="nav-placeholder"></div>
+   </header>
+
+    <main>
+        <form action="">
+            <label for="">Login:</label> <br>
+            <input type="password" name="" id=""> <br><br>
+            <button>Ok</button>
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+     <!----- NAVBAR ----->
+     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     <script>
+       $(function () {
+         $("#nav-placeholder").load("./Nav.html");
+       });
+     </script>
+      <!----- FOOTER ----->
+    <script>
+        $(function () {
+          $("#footer-placeholder").load("./Footer.html");
+        });
+      </script>
+</body>
+</html>
