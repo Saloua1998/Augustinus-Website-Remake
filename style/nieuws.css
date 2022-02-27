@@ -8,18 +8,17 @@ main{
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(2, 40vw);
-    row-gap: 1em;
-    column-gap: 6em;
+    gap: 1em;
     margin-right: 2em;
 }
 main section{
     border: .3em rgb(30, 30, 30) solid;
     box-shadow: 5px 5px 5px rgb(100, 100, 100);
     border-radius: 1em;
-    margin: 0 0em;
     width: 100%;
-    min-width: 10em;
     padding: 2em;
+    margin: 0;
+    box-sizing: border-box;
 }
 main section img{
     display: block;
@@ -33,60 +32,55 @@ main section a{
 /* Mobile Devices */
 @media (max-width: 480px) {
     main{
-        display: flex;
-        flex-direction: column;
-        margin: 0 2em 0 1em;
-        column-gap: 0;
-        row-gap: 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     main section{
-        width: calc(120vw);
+        box-sizing: border-box;
+        margin: 1em auto;
+        width: 95vw;
     }
 }
   
 /* Low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
     main{
-        display: flex;
-        flex-direction: column;
-        margin: 0 2em 0 1em;
-        column-gap: 0;
-        row-gap: 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     main section{
-        width: calc(100vw - 8em);
+        box-sizing: border-box;
+        margin: 1em auto;
+        width: 92vw;
     }
 }
   
 /* Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px){
     main{
-        display: flex;
-        flex-direction: column;
-        margin: 0 3em;
-        column-gap: 0;
-        row-gap: 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     main section{
-        width: calc(100vw - 10em);
+        box-sizing: border-box;
+        margin: 1em auto;
+        width: 90vw;
     }
 }
   
 /* Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px){
     main{
-        display: flex;
-        flex-direction: column;
-        margin: 0 3em;
-        column-gap: 0;
-        row-gap: 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     main section{
-        width: calc(100vw - 10em);
+        box-sizing: border-box;
+        margin: 1em auto;
+        width: 90vw;
     }
-}
-  
-/* Large screens */
-@media (min-width: 1281px) {
-
 }

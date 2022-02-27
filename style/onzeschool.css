@@ -3,7 +3,7 @@ main section a{
 }
 main section{
     border: .3em rgb(30, 30, 30) solid;
-    border-radius: .5em;
+    border-radius: 1em;
     box-shadow: 5px 5px 5px rgb(100, 100, 100);
    
     margin: 0 auto;
